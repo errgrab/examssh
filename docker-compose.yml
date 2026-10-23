@@ -1,0 +1,16 @@
+services:
+  examshell:
+    build: .
+    container_name: examshell-rank02
+    environment:
+      EXAM_PASSWORD: ${EXAM_PASSWORD:-exam}
+    ports:
+      - "127.0.0.1:2222:22"
+      - "127.0.0.1:9418:9418"
+    volumes:
+      - exam-data:/var/lib/examshell
+    restart: unless-stopped
+
+volumes:
+  exam-data:
+
