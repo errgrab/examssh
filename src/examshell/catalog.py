@@ -80,4 +80,3 @@ def by_slug(slug: str) -> Exercise:
         if exercise.slug == slug:
             return exercise
     raise KeyError(slug)
-

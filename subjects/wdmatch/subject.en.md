@@ -5,4 +5,3 @@ Crie um programa em `wdmatch.c` que recebe duas strings. Imprima a primeira stri
 Exemplo: `./a.out faya 'f this is a test y a'` imprime `faya`.
 
 Compile com `gcc -Wall -Wextra -Werror`.
-

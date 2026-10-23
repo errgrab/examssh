@@ -5,4 +5,3 @@ Crie um programa em `first_word.c`. Ele recebe uma string como primeiro argument
 Exemplo: `./a.out '  hello   world'` deve imprimir `hello`.
 
 Compile com `gcc -Wall -Wextra -Werror`.
-

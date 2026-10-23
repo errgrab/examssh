@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 RUN sed -i 's|http://deb.debian.org|https://deb.debian.org|g' /etc/apt/sources.list.d/debian.sources \
  && apt-get -o Acquire::https::Verify-Peer=false update \
  && apt-get -o Acquire::https::Verify-Peer=false install -y --no-install-recommends \
-    gcc git openssh-server python3 \
+    gcc git libc6-dev openssh-server python3 \
  && rm -rf /var/lib/apt/lists/* \
  && rm -f /etc/ssh/ssh_host_* \
  && groupadd --system git \
@@ -35,4 +35,3 @@ RUN chmod 0755 /usr/local/bin/examshell-entrypoint \
 
 EXPOSE 22 9418
 ENTRYPOINT ["/usr/local/bin/examshell-entrypoint"]
-

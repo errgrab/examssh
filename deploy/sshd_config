@@ -15,4 +15,3 @@ AllowTcpForwarding no
 PermitTunnel no
 PrintMotd no
 Subsystem sftp /usr/lib/openssh/sftp-server
-
